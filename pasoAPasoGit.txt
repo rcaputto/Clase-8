@@ -1,0 +1,46 @@
+1- Crear repositorio REMOTO en github sin agregar README
+1.1- Invito a los diferentes colaboradores
+
+2- Crear repositorio LOCAL 
+2.1- Elegir ubicación en la PC
+2.2- Abrir terminal de git desde la carpeta elegida
+2.3- git init
+
+3- Cargar nombre de usuario y email de forma global (de esta forma regristrará nuestro usuario cada vez que realicemos una modificación)
+3.1- git config --global user.name 'Bendomir'
+3.2- git config --global user.email 'a.estevezb@gmail.com
+(podemos verificar con git config user.name y git config user.email)
+
+4- Enlazar repositorio REMOTO con el LOCAL
+4.1 git remote add origin URL DEL REPO REMOTO
+(podemos verificar con git remote -v)
+
+5- En cualquier momento podemos ver el estado de los archivsos y de los mismos frente al repositorio
+5.1- git status
+
+6- Creamos los archivos que necesitamos para el proyecto en el repo LOCAL
+6.1- Crear README.md en primer lugar
+
+7- Elegimos los archivos que queremos subir a la nube
+7.1- git add .   (el espacio punto indica que queremos agregar todo lo que esta en la carpeta donde existe el repo local)
+7.2- git add NOMBRE DE ARCHIVO (si solo quiero agregar un archivo específico)
+
+8- Creamos el COMMIT y le damos un nombre (el nombre debe hacer referencia a lo que se realizó en el mismo)
+8.1- git commit -m 'nombreDelCommit'
+
+9- Exportamos el COMMIT al repo REMOTO
+9.1 git push origin master  (puede ser main, depende de la rama en la que estemos)
+
+10- Colaborador para tener acceso al repo.
+10.1- clonar repositorio
+10.2- elegir carpeta donde querramos que se almacene el repo LOCAL
+10.3- clonamos el repo REMOTO
+10.4 git clone URL DEL repo REMOTO
+
+11- Colaborador realiza una modificación
+11.1- git add.
+11.2- git commit -m 'nombreDelCommit'
+11.3- git push origin master
+
+12- Creador del repo o resto de colaboradores para actualizar su repo
+12.1 git pull origin master
